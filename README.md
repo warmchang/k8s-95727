@@ -14,7 +14,7 @@ bash -x hack/download.sh 1.19.3
 
 To test it on a Linux VM, do the following to cross compile:
 ```bash
-GOARCH=amd64 GOOS=linux go build -ldflags="-s -w" .
+GOARCH=amd64 GOOS=linux go build -mod=vendor -ldflags="-s -w" .
 ```
 
 # Reproduce steps
